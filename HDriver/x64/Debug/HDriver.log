@@ -1,0 +1,23 @@
+﻿  Building 'HDriver' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\HDriver.inf
+  Stamping [Version] section with DriverVer=08/23/2023,22.35.14.925
+  Main.cpp
+  HDriver.vcxproj -> C:\Users\d3215\Desktop\HDriver\x64\Debug\HDriver.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\d3215\Desktop\HDriver\x64\Debug\HDriver.sys
+  
+  Driver is 'Universal'.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\d3215\Desktop\HDriver\x64\Debug\HDriver\hdriver.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\d3215\Desktop\HDriver\x64\Debug\HDriver\hdriver.cat
+  

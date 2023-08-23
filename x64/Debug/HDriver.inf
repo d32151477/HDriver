@@ -1,0 +1,80 @@
+;
+; HDriver.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System ; TODO: specify appropriate Class
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=HDriver.cat
+DriverVer = 08/23/2023,22.35.14.925
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+HDriver_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+HDriver.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%HDriver.DeviceDesc%=HDriver_Device, Root\HDriver ; TODO: edit hw-id
+
+[HDriver_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+HDriver.sys
+
+;-------------- Service installation
+[HDriver_Device.NT.Services]
+AddService = HDriver,%SPSVCINST_ASSOCSERVICE%, HDriver_Service_Inst
+
+; -------------- HDriver driver install sections
+[HDriver_Service_Inst]
+DisplayName    = %HDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\HDriver.sys
+
+;
+;--- HDriver_Device Coinstaller installation ------
+;
+
+[HDriver_Device.NT.CoInstallers]
+AddReg=HDriver_Device_CoInstaller_AddReg
+CopyFiles=HDriver_Device_CoInstaller_CopyFiles
+
+[HDriver_Device_CoInstaller_AddReg]
+;
+
+
+[HDriver_Device_CoInstaller_CopyFiles]
+;
+
+
+[HDriver_Device.NT.Wdf]
+KmdfService =  HDriver, HDriver_wdfsect
+[HDriver_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "HDriver Installation Disk"
+HDriver.DeviceDesc = "HDriver Device"
+HDriver.SVCDESC = "HDriver Service"
