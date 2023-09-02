@@ -13,7 +13,7 @@ IOCTL_READ_MEMORY ```0x9c402410```
 IOCTL_WRITE_MEMORY ```0x9c402414```
 
 
-## 사용 방법
+## 설치 방법
 - Windows SDK가 WDK (윈도우 드라이버 키트)가 설치되어 있어야 합니다.
   
 - 프로젝트를 빌드합니다.
