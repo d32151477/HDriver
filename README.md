@@ -36,7 +36,7 @@
   sc start HDriver
   ```
 
-[DSE-Patcher] : https://sourceforge.net/projects/dse-patcher/files/DSE-Patcher_V1.0_20221127.7z/download
+[DSE-Patcher]: https://sourceforge.net/projects/dse-patcher/files/DSE-Patcher_V1.0_20221127.7z/download
 [EfiGuard]: https://github.com/Mattiwatti/EfiGuard
 [DSEFix]: https://github.com/hfiref0x/DSEFix
 [DeviceIoControl]: https://learn.microsoft.com/ko-kr/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol
