@@ -2,7 +2,7 @@
 프로세스 물리 메모리 주소를 읽고 쓰는 윈도우 커널 드라이버입니다.
 
 # IOCTL 코드
-해당 코드를 통해 커널 드라이버에 메세지를 보내고 받아올 수 있습니다. [ioapiset.h/DeviceIoControl]
+해당 코드를 통해 커널 드라이버에 메세지를 보내고 받아올 수 있습니다. [DeviceIoControl]
 
 IOCTL_SET_PID ```0x9c402418```
 
@@ -28,4 +28,4 @@ IOCTL_WRITE_MEMORY ```0x9c402414```
 
 [EfiGuard]: https://github.com/Mattiwatti/EfiGuard
 [DSEFix]: https://github.com/hfiref0x/DSEFix
-[ioapiset.h/DeviceIoControl]: https://learn.microsoft.com/ko-kr/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol
+[DeviceIoControl]: https://learn.microsoft.com/ko-kr/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol
