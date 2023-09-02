@@ -26,6 +26,12 @@ IOCTL_WRITE_MEMORY ```0x9c402414```
 
   부트 디버그 옵션을 변경하지 않고 사용하려면 우회 프로그램 [EfiGuard]또는 [DSEFix] 등 을 사용하세요.
 
+- 서비스 등록
+  ```sc create HDriver binpath= "주소/HDriver.sys" start= demand type= kernel```
+
+- 서비스 실행
+  ```sc start HDriver```
+  
 [EfiGuard]: https://github.com/Mattiwatti/EfiGuard
 [DSEFix]: https://github.com/hfiref0x/DSEFix
 [DeviceIoControl]: https://learn.microsoft.com/ko-kr/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol
