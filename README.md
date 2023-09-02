@@ -19,7 +19,7 @@
 - 서명되지 않은 드라이버를 불러오기 위해 부트 디버그 옵션을 변경합니다.
   ```
   bcdedit /bootdebug on
-  bcdedit /set nointegritychecks ON
+  bcdedit /set nointegritychecks on
   ```
 
   부트 디버그 옵션을 변경하지 않고 사용하려면 [EfiGuard] 또는 [DSEFix] 을 사용하세요.
