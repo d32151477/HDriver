@@ -22,7 +22,7 @@
   bcdedit /set nointegritychecks on
   ```
 
-  부트 디버그 옵션을 변경하지 않고 사용하려면 [EfiGuard] 또는 [DSEFix] 또는 [DSE-Patcher] 을 사용하세요.
+  부트 디버그 옵션을 변경하지 않고 사용하려면 [EfiGuard] 또는 [DSEFix] 또는 [DSE-Patcher]를 사용하세요.
 
 - 서비스 등록
   
