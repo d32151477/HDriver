@@ -11,7 +11,7 @@
 bcdedit /bootdebug on
 bcdedit /set nointegritychecks ON
 ```
-부트 디버그 옵션을 변경하지 않고 사용하려면 우회 프로그램 [ElfGuard]또는 [DSEFix] 등 을 사용하세요.
+  부트 디버그 옵션을 변경하지 않고 사용하려면 우회 프로그램 [ElfGuard]또는 [DSEFix] 등 을 사용하세요.
 
 [EfiGuard]: https://github.com/Mattiwatti/EfiGuard
 [DSEFix]: https://github.com/hfiref0x/DSEFix
