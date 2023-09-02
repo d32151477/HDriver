@@ -17,7 +17,7 @@
 - 프로젝트를 빌드합니다.
 
 - 서명되지 않은 드라이버를 불러오기 위해 부트 디버그 옵션을 변경합니다.
-  ```
+  ```cmd
   bcdedit /bootdebug on
   bcdedit /set nointegritychecks on
   ```
@@ -26,11 +26,15 @@
 
 - 서비스 등록
   
-  ```sc create HDriver binpath= "주소/HDriver.sys" start= demand type= kernel```
+  ```cmd
+  sc create HDriver binpath= "주소/HDriver.sys" start= demand type= kernel
+  ```
 
 - 서비스 실행
   
-  ```sc start HDriver```
+  ```cmd
+  sc start HDriver
+  ```
   
 [EfiGuard]: https://github.com/Mattiwatti/EfiGuard
 [DSEFix]: https://github.com/hfiref0x/DSEFix
