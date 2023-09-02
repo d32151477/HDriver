@@ -4,14 +4,12 @@
 ## IOCTL 코드
 해당 IOCTL 코드를 통해 커널 드라이버와 통신할 수 있습니다. [DeviceIoControl]
 
-IOCTL_SET_PID ```0x9c402418```
-
-IOCTL_SET_ADRESS ```0x9c40241c```
-
-IOCTL_READ_MEMORY ```0x9c402410```
-
-IOCTL_WRITE_MEMORY ```0x9c402414```
-
+```c
+#define IOCTL_SET_PID 0x9c402418
+#define IOCTL_SET_ADRESS 0x9c40241c
+#define IOCTL_READ_MEMORY 0x9c402410
+#define IOCTL_WRITE_MEMORY 0x9c402414
+```
 
 ## 설치 방법
 - Windows SDK가 WDK (윈도우 드라이버 키트)가 설치되어 있어야 합니다.
